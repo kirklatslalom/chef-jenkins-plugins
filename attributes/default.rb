@@ -1,7 +1,10 @@
 default[:jenkins][:server][:plugins] = %w(
+  ansicolor
+  thinBackup
   ant
   nant
   mailer
+  disk-usage
   javadoc
   token-macro
   maven-plugin
@@ -21,7 +24,11 @@ default[:jenkins][:server][:plugins] = %w(
   maven-plugin
   maven-info
   dashboard-view
+  analysis-core
+  findbugs
   jquery
   build-pipeline-plugin
+  deployment-notification
+  chef-tracking
 )
 
